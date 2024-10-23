@@ -1,0 +1,167 @@
+body {
+
+    min-height: 75rem;
+    padding-top: 4.5rem;
+}
+
+.navbar {
+    color: white;
+    background: linear-gradient(to bottom, #454a4f, rgba(69, 74, 79, 0.8))
+}
+
+.hero-fondo{
+
+    min-height: 100vh;
+
+}
+
+.conten_negro{
+    background: #25292e;
+}
+
+.conten2{
+    background: white !important;
+    padding: 2px 0px;
+}
+
+@media (min-width:768px) {
+    .hero-fondo .navbar {
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 991.98px) { 
+    .navbar {
+        position: static !important; 
+        min-height: 0rem !important;
+        padding-top: 0rem !important;
+    }
+    .hero-fondo{
+        margin-top: -65px !important;
+    }
+}
+
+.nav-item a {
+    font-size: 17px;
+    margin-right: 10px;
+    color: white;
+}
+
+.navbar-brand img{
+    margin-left: 10px;
+}
+
+.nav-link.btn {
+    color: white; 
+    background-color: #dc3545; 
+    border-color: white !important; 
+    transition: 0.3s ease-in-out;
+
+}
+
+.nav-link.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.custom-btn{
+    transition: 0.3s ease-in-out !important;
+    border-color: white !important;
+}
+
+.custom-btn:hover {
+    background-color: white !important; 
+    color: black !important; 
+}
+
+.navbar-toggler {
+    border-color:rgba(255, 255, 255, 0.3);
+}
+
+.img {
+    transition: transform 0.3s ease, border-radius 0.3s ease; /* Efecto suave para el cambio de tamaño y bordes */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.6);
+}
+
+.img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+    border-radius: 20px; /* Puedes cambiar el tamaño del radio de los bordes al pasar el puntero */
+}
+
+.featurette{
+    margin-top: 50px;
+}
+
+@media(min-width:780px){
+    .img{
+        height: auto;
+        width: auto;
+    }
+}
+
+/* Estilo para el botón de hamburguesa */
+.navbar-toggler {
+    border-color: transparent; /* Quitar borde si lo hay */
+    border: 1px solid white; 
+}
+
+/* Cambiar el color del icono de hamburguesa a blanco */
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Cambiar el color de los nav-items a blanco */
+.nav-link {
+    color: white; /* Asegurarse de que el texto sea blanco */
+}
+
+
+/* Línea separadora que solo aparece en vista móvil */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        border-top: 1px solid rgba(255, 255, 255, 0.5); /* Línea blanca */
+        margin-top: 10px; /* Espacio entre el icono y la línea */
+        padding-top: 10px; /* Espacio entre la línea y los nav-items */
+    }
+}
+
+.footer{
+    padding-bottom: 50px !important;
+    padding-top: 30px;
+}
+
+.nav-item {
+    padding: 0px 5px; /* Espaciado interno para los enlaces */
+}
+
+.card {
+    transition: transform 0.4s, box-shadow 0.2s; 
+}
+
+.card:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: column; 
+        margin-top: 10px; 
+    }
+
+    .logoo{
+        margin-top: 40px !important;
+    }
+    
+    .nav-item {
+        margin-bottom: 5px; /* Espaciado entre los enlaces */
+    }
+}
+
